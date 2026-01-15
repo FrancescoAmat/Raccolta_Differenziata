@@ -1,2 +1,0 @@
-# Raccolta_Differenziata
-

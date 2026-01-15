@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/85_Sabato_09_00_11_35shp_1.js"></script><script src="layers/82_Sabato_09_00_11_35shp_2.js"></script><script src="layers/477_Sabato_09_00_11_35shp_3.js"></script><script src="layers/476_Sabato_09_00_11_35shp_4.js"></script><script src="layers/472_Sabato_09_00_11_35shp_5.js"></script><script src="layers/470_Sabato_09_00_11_35shp_6.js"></script><script src="layers/361_Sabato_06_00_09_00shp_7.js"></script><script src="layers/350_Sabato_09_00_11_35shp_8.js"></script><script src="layers/35_Sabato_09_00_11_35shp_9.js"></script><script src="layers/28_Sabato_09_00_11_35shp_10.js"></script><script src="layers/202_Sabato_09_00_11_35shp_11.js"></script><script src="layers/201_Sabato_09_00_11_35shp_12.js"></script><script src="layers/85_Venerdi_08_00_11_35shp_13.js"></script><script src="layers/82_Venerdi_08_00_11_35shp_14.js"></script><script src="layers/477_Venerdi_08_00_11_35shp_15.js"></script><script src="layers/476_Venerdi_08_00_11_35shp_16.js"></script><script src="layers/472_Venerdi_08_00_11_35shp_17.js"></script><script src="layers/470_Venerdi_08_00_11_35shp_18.js"></script><script src="layers/361_Venerdi_08_00_11_35shp_19.js"></script><script src="layers/350_Venerdi_08_00_11_35shp_20.js"></script><script src="layers/35_Venerdi_08_00_11_35shp_21.js"></script><script src="layers/28_Venerdi_08_00_11_35shp_22.js"></script><script src="layers/202_Venerdi_08_00_11_35shp_23.js"></script><script src="layers/201_Venerdi_08_00_11_35shp_24.js"></script><script src="layers/85_Giovedi_08_00_11_35shp_25.js"></script><script src="layers/82_Giovedi_08_00_11_35shp_26.js"></script><script src="layers/477_Giovedi_08_00_11_35shp_27.js"></script><script src="layers/476_Giovedi_08_00_11_35shp_28.js"></script><script src="layers/472_Giovedi_08_00_11_35shp_29.js"></script><script src="layers/470_Giovedi_08_00_11_35shp_30.js"></script><script src="layers/361_Giovedi_08_00_11_35shp_31.js"></script><script src="layers/350_Giovedi_08_00_11_35shp_32.js"></script><script src="layers/35_Giovedi_08_00_11_35shp_33.js"></script><script src="layers/28_Giovedi_08_00_11_35shp_34.js"></script><script src="layers/202_Giovedi_08_00_11_35shp_35.js"></script><script src="layers/201_Giovedi_08_00_11_35shp_36.js"></script><script src="layers/85_Mercoledi_08_00_11_35shp_37.js"></script><script src="layers/82_Mercoledi_08_00_11_35shp_38.js"></script><script src="layers/477_Mercoledi_08_00_11_35shp_39.js"></script><script src="layers/476_Mercoledi_08_00_11_35shp_40.js"></script><script src="layers/472_Mercoledi_08_00_11_35shp_41.js"></script><script src="layers/470_Mercoledi_08_00_11_35shp_42.js"></script><script src="layers/361_Mercoledi_08_00_11_35shp_43.js"></script><script src="layers/350_Mercoledi_05_30_08_00shp_44.js"></script><script src="layers/35_Mercoledi_08_00_11_35shp_45.js"></script><script src="layers/28_Mercoledi_08_00_11_35shp_46.js"></script><script src="layers/202_Mercoledi_08_00_11_35shp_47.js"></script><script src="layers/201_Mercoledi_08_00_11_35shp_48.js"></script><script src="layers/85_Martedi_08_00_11_35shp_49.js"></script><script src="layers/82_Martedi_08_00_11_35shp_50.js"></script><script src="layers/477_Martedi_08_00_11_35shp_51.js"></script><script src="layers/476_Martedi_08_00_11_35shp_52.js"></script><script src="layers/472_Martedi_08_00_11_35shp_53.js"></script><script src="layers/470_Martedi_08_00_11_35shp_54.js"></script><script src="layers/361_Martedi_08_00_11_35shp_55.js"></script><script src="layers/350_Martedi_08_00_11_35shp_56.js"></script><script src="layers/35_Martedi_08_00_11_35shp_57.js"></script><script src="layers/28_Martedi_08_00_11_35shp_58.js"></script><script src="layers/202_Martedi_08_00_11_35shp_59.js"></script><script src="layers/201_Martedi_08_00_11_35shp_60.js"></script><script src="layers/85_Lunedi_08_00_11_35shp_61.js"></script><script src="layers/82_Lunedi_08_00_11_35shp_62.js"></script><script src="layers/477_Lunedi_08_00_11_35shp_63.js"></script><script src="layers/476_Lunedi_08_00_11_35shp_64.js"></script><script src="layers/472_Lunedi_08_00_11_35shp_65.js"></script><script src="layers/470_Lunedi_08_00_11_35shp_66.js"></script><script src="layers/361_Lunedi_08_00_11_35shp_67.js"></script><script src="layers/350_Lunedi_08_00_11_35shp_68.js"></script><script src="layers/35_Lunedi_08_00_11_35shp_69.js"></script><script src="layers/28_Lunedi_08_00_11_35shp_70.js"></script><script src="layers/202_Lunedi_08_00_11_35shp_71.js"></script><script src="layers/201_Lunedi_08_00_11_35shp_72.js"></script>
+        <script src="styles/85_Sabato_09_00_11_35shp_1_style.js"></script><script src="styles/82_Sabato_09_00_11_35shp_2_style.js"></script><script src="styles/477_Sabato_09_00_11_35shp_3_style.js"></script><script src="styles/476_Sabato_09_00_11_35shp_4_style.js"></script><script src="styles/472_Sabato_09_00_11_35shp_5_style.js"></script><script src="styles/470_Sabato_09_00_11_35shp_6_style.js"></script><script src="styles/361_Sabato_06_00_09_00shp_7_style.js"></script><script src="styles/350_Sabato_09_00_11_35shp_8_style.js"></script><script src="styles/35_Sabato_09_00_11_35shp_9_style.js"></script><script src="styles/28_Sabato_09_00_11_35shp_10_style.js"></script><script src="styles/202_Sabato_09_00_11_35shp_11_style.js"></script><script src="styles/201_Sabato_09_00_11_35shp_12_style.js"></script><script src="styles/85_Venerdi_08_00_11_35shp_13_style.js"></script><script src="styles/82_Venerdi_08_00_11_35shp_14_style.js"></script><script src="styles/477_Venerdi_08_00_11_35shp_15_style.js"></script><script src="styles/476_Venerdi_08_00_11_35shp_16_style.js"></script><script src="styles/472_Venerdi_08_00_11_35shp_17_style.js"></script><script src="styles/470_Venerdi_08_00_11_35shp_18_style.js"></script><script src="styles/361_Venerdi_08_00_11_35shp_19_style.js"></script><script src="styles/350_Venerdi_08_00_11_35shp_20_style.js"></script><script src="styles/35_Venerdi_08_00_11_35shp_21_style.js"></script><script src="styles/28_Venerdi_08_00_11_35shp_22_style.js"></script><script src="styles/202_Venerdi_08_00_11_35shp_23_style.js"></script><script src="styles/201_Venerdi_08_00_11_35shp_24_style.js"></script><script src="styles/85_Giovedi_08_00_11_35shp_25_style.js"></script><script src="styles/82_Giovedi_08_00_11_35shp_26_style.js"></script><script src="styles/477_Giovedi_08_00_11_35shp_27_style.js"></script><script src="styles/476_Giovedi_08_00_11_35shp_28_style.js"></script><script src="styles/472_Giovedi_08_00_11_35shp_29_style.js"></script><script src="styles/470_Giovedi_08_00_11_35shp_30_style.js"></script><script src="styles/361_Giovedi_08_00_11_35shp_31_style.js"></script><script src="styles/350_Giovedi_08_00_11_35shp_32_style.js"></script><script src="styles/35_Giovedi_08_00_11_35shp_33_style.js"></script><script src="styles/28_Giovedi_08_00_11_35shp_34_style.js"></script><script src="styles/202_Giovedi_08_00_11_35shp_35_style.js"></script><script src="styles/201_Giovedi_08_00_11_35shp_36_style.js"></script><script src="styles/85_Mercoledi_08_00_11_35shp_37_style.js"></script><script src="styles/82_Mercoledi_08_00_11_35shp_38_style.js"></script><script src="styles/477_Mercoledi_08_00_11_35shp_39_style.js"></script><script src="styles/476_Mercoledi_08_00_11_35shp_40_style.js"></script><script src="styles/472_Mercoledi_08_00_11_35shp_41_style.js"></script><script src="styles/470_Mercoledi_08_00_11_35shp_42_style.js"></script><script src="styles/361_Mercoledi_08_00_11_35shp_43_style.js"></script><script src="styles/350_Mercoledi_05_30_08_00shp_44_style.js"></script><script src="styles/35_Mercoledi_08_00_11_35shp_45_style.js"></script><script src="styles/28_Mercoledi_08_00_11_35shp_46_style.js"></script><script src="styles/202_Mercoledi_08_00_11_35shp_47_style.js"></script><script src="styles/201_Mercoledi_08_00_11_35shp_48_style.js"></script><script src="styles/85_Martedi_08_00_11_35shp_49_style.js"></script><script src="styles/82_Martedi_08_00_11_35shp_50_style.js"></script><script src="styles/477_Martedi_08_00_11_35shp_51_style.js"></script><script src="styles/476_Martedi_08_00_11_35shp_52_style.js"></script><script src="styles/472_Martedi_08_00_11_35shp_53_style.js"></script><script src="styles/470_Martedi_08_00_11_35shp_54_style.js"></script><script src="styles/361_Martedi_08_00_11_35shp_55_style.js"></script><script src="styles/350_Martedi_08_00_11_35shp_56_style.js"></script><script src="styles/35_Martedi_08_00_11_35shp_57_style.js"></script><script src="styles/28_Martedi_08_00_11_35shp_58_style.js"></script><script src="styles/202_Martedi_08_00_11_35shp_59_style.js"></script><script src="styles/201_Martedi_08_00_11_35shp_60_style.js"></script><script src="styles/85_Lunedi_08_00_11_35shp_61_style.js"></script><script src="styles/82_Lunedi_08_00_11_35shp_62_style.js"></script><script src="styles/477_Lunedi_08_00_11_35shp_63_style.js"></script><script src="styles/476_Lunedi_08_00_11_35shp_64_style.js"></script><script src="styles/472_Lunedi_08_00_11_35shp_65_style.js"></script><script src="styles/470_Lunedi_08_00_11_35shp_66_style.js"></script><script src="styles/361_Lunedi_08_00_11_35shp_67_style.js"></script><script src="styles/350_Lunedi_08_00_11_35shp_68_style.js"></script><script src="styles/35_Lunedi_08_00_11_35shp_69_style.js"></script><script src="styles/28_Lunedi_08_00_11_35shp_70_style.js"></script><script src="styles/202_Lunedi_08_00_11_35shp_71_style.js"></script><script src="styles/201_Lunedi_08_00_11_35shp_72_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
